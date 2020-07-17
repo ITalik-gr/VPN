@@ -1,0 +1,205 @@
+
+.feedback {
+  &__down {
+    margin-top: -75px;
+  }
+  &__arrow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    img {
+      height: 60px;
+      width: 60px;
+    }
+    .next {
+      margin-left: 20px;
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__wrap {
+
+  }
+  &__text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    color: #0B132A;
+  }
+  &__descr {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+    p {
+      max-width: 555px;
+    }
+  }
+  &-slider {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 105px;
+    &__card {
+      margin-left: 50px;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      min-width: 400px;
+      min-height: 230px;
+      transition: .3s all;
+      background: #FFFFFF;
+      border: 2px solid #DDDDDD;
+      box-sizing: border-box;
+      border-radius: 10px;
+      position: relative;
+      &:first-child {
+        margin-left: 0;
+      }
+      .slide-bg {
+        position: absolute;
+        display: none;
+        z-index: -1;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 100px;
+        background: #0D1025;
+        opacity: 0.06;
+        filter: blur(200px);
+        border-radius: 10px;
+      }
+      &:hover {
+        border: 2px solid #F53838;
+      }
+      &:hover .slide-bg {
+        display: block;
+      }
+      &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__body {
+        margin-top: 20px;
+      }
+      &__user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &__img {
+  
+      }
+      &__name {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h6 {
+          font-weight: 500;
+          font-size: 18px;
+          color: #0B132A;
+          margin-bottom: 5px;
+        }
+        span {
+          font-size: 14px;
+          color: #4F5665;
+        }
+      }
+      &__rate {
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 16px;
+          color: #0B132A; 
+          img {
+            margin-left: 10px;
+            margin-bottom: 2px;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      &__descr {
+        min-height: 120px;
+        font-size: 16px;
+        line-height: 30px;
+        color: #0B132A;
+        p {
+          max-width: 340px;
+        }
+      }
+    }
+  }
+}
+// .slick-dots {
+//   text-align: center;
+//   display: flex; // поставить кнопки в ряд
+//   justify-content: center; // выровнять по центру
+//   list-style: none; // убираем черные маркеры
+// }       
+// .slick-dots button {
+//   background: #eddfd477; // цвет фона
+//   border: none; // без рамки
+//   border-radius: 50%; // радиус закругления
+//   height: 15px; // высота точки
+//   width: 15px; // ширина точки
+//   margin: 5px; // отступы между точками
+//   outline: none; // убираем обводку
+// }        
+// .slick-dots li[class="slick-active"] button {
+//   background: #eac8be;
+// }
+.prev {
+  z-index: 2;
+}
+.dots-style {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  position: absolute;
+  left: 150px;
+  bottom: 0px;
+}
+
+.dots-style button {
+  background: #DDE0E4;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  outline: none;
+}
+
+.dots-style li[class="slick-active"] button {
+  // background: url(../img/Union.svg);
+  background: #F53838;
+  border-radius: 15px;
+  height: 15px;
+  width: 45px;
+  // background-position: center;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}

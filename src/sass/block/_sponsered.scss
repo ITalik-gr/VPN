@@ -1,0 +1,14 @@
+
+.sponsered {
+  margin-bottom: 50px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img {
+    img {
+      cursor: pointer;
+    }
+  }
+}

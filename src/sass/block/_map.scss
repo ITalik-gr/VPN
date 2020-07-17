@@ -1,0 +1,36 @@
+
+.map {
+  margin-bottom: 35px;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    color: #0B132A;
+    text-align: center;
+  }
+  &__descr {
+    font-size: 16px;
+    line-height: 30px;
+    color: #464a53;
+    margin-top: 20px;
+    text-align: center;
+    p {
+      max-width: 555px;
+    }
+  }
+  &__img {
+    margin-top: 155px;
+  }
+}
